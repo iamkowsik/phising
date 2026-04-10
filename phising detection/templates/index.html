@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛡️ AI Phishing URL Detector</h1>
+
+<form action="/predict" method="POST">
+
+<input type="text" name="url" placeholder="Enter Website URL..." required>
+
+<br>
+
+<button onclick="showLoading()">Scan URL</button>
+
+</form>
+
+</div>
+<script>
+function showLoading(){
+    document.querySelector("button").innerText="Scanning URL...";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PhishGuard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                PhishGuard
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#tools" class="nav-link">Tools</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1>About PhishGuard</h1>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <h2>What is PhishGuard?</h2>
+                    <p>
+                        PhishGuard is an advanced phishing detection tool designed to help users identify and protect themselves
+                        from phishing attacks. In an era where cybersecurity threats are constantly evolving, our platform provides
+                        real-time analysis and detection of suspicious URLs, emails, and text content.
+                    </p>
+                </div>
+
+                <div class="about-mission">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to make the internet safer for everyone by providing accessible, powerful, and
+                        user-friendly tools to detect and prevent phishing attacks. We believe that education and awareness
+                        are key to cybersecurity, and we're committed to helping users understand the threats they face online.
+                    </p>
+                </div>
+
+                <div class="about-technology">
+                    <h2>How It Works</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3><i class="fas fa-link"></i> URL Analysis</h3>
+                            <p>Our system analyzes URLs for suspicious patterns, including IP addresses, domain typosquatting, 
+                            unusual paths, and lack of HTTPS encryption.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3><i class="fas fa-brain"></i> Pattern Recognition</h3>
+                            <p>We use advanced pattern recognition to identify common phishing techniques, including urgency 
+                            language, requests for sensitive information, and suspicious keywords.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3><i class="fas fa-database"></i> Known Threat Database</h3>
+                            <p>Our system maintains a database of known phishing domains and continuously updates it with 
+                            new threats discovered in the wild.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3><i class="fas fa-chart-line"></i> Risk Scoring</h3>
+                            <p>We provide detailed risk scores (0-100%) for each analysis, helping you understand the level 
+                            of threat posed by the content you're checking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>
+                            <strong>Real-time Analysis:</strong> Get instant results for URLs, emails, and text content
+                        </li>
+                        <li>
+                            <strong>Comprehensive Indicators:</strong> View detailed analysis of what makes content suspicious
+                        </li>
+                        <li>
+                            <strong>Risk Scoring:</strong> Understand the threat level with our 0-100% risk score
+                        </li>
+                        <li>
+                            <strong>Multi-Format Support:</strong> Check URLs, analyze emails, and scan text all in one place
+                        </li>
+                        <li>
+                            <strong>Usage Statistics:</strong> Track your detection history and stay informed
+                        </li>
+                        <li>
+                            <strong>Professional Design:</strong> User-friendly interface designed for everyone
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-disclaimer">
+                    <h2>Disclaimer</h2>
+                    <p>
+                        <strong>Educational Purpose:</strong> PhishGuard is an educational tool designed to raise awareness 
+                        about phishing attacks. While we strive for accuracy, no tool can guarantee 100% detection of all 
+                        phishing attempts.
+                    </p>
+                    <p>
+                        <strong>Always Verify:</strong> When in doubt, always verify suspicious messages through official 
+                        channels directly with the organization. Never click on links from suspicious emails - instead, 
+                        navigate to the official website independently.
+                    </p>
+                    <p>
+                        <strong>Best Practices:</strong> Use PhishGuard as part of a comprehensive security strategy that 
+                        includes antivirus software, firewalls, and safe browsing habits.
+                    </p>
+                </div>
+
+                <div class="about-tips">
+                    <h2>Phishing Prevention Tips</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <i class="fas fa-eye-slash"></i>
+                            <h4>Watch for Urgency</h4>
+                            <p>Legitimate companies rarely rush you into action. Be wary of emails claiming urgent action is needed.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-link"></i>
+                            <h4>Hover Over Links</h4>
+                            <p>Before clicking, hover over links to see their actual destination. Phishing links often disguise their true URL.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-user-secret"></i>
+                            <h4>Never Share Credentials</h4>
+                            <p>Legitimate companies never ask for passwords or sensitive information via email or unsolicited messages.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Check SSL Certificates</h4>
+                            <p>Look for the padlock icon and "HTTPS" in the address bar when entering sensitive information online.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-search"></i>
+                            <h4>Verify Senders</h4>
+                            <p>Check the sender's email address carefully. Phishers often use addresses similar to legitimate ones.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Trust Your Instincts</h4>
+                            <p>If something feels off or suspicious, it probably is. Don't ignore your gut feeling about an email.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-contact">
+                    <h2>Get Started</h2>
+                    <p>
+                        Ready to protect yourself from phishing attacks? 
+                        <a href="index.html" class="contact-link">Go back to the main dashboard</a> 
+                        and start scanning for threats right now!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PhishGuard. All rights reserved. Protect yourself from phishing attacks.</p>
+            <p>Educational Tool - Always verify suspicious content through official channels.</p>
+        </div>
+    </footer>
+
+    <style>
+        .about-section {
+            padding: 80px 20px;
+            min-height: 100vh;
+            background: var(--light-bg);
+        }
+
+        .about-section h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        .about-content > div {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-content h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .tech-grid,
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-item,
+        .tip-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .tech-item h3,
+        .tip-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-item p,
+        .tip-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .features-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-light);
+        }
+
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .about-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-section h2 {
+                font-size: 1.3rem;
+            }
+
+            .about-content > div {
+                padding: 1.5rem;
+            }
+
+            .tech-grid,
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
